@@ -1,0 +1,28 @@
+
+// Bootstrap Variables
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+
+// Import Bootstrap
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.button-class{
+  text-align: center;
+
+  .like-button{
+    width: 300px;
+    height: 150px;
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+  }
+}
+  .button-class:hover{
+
+  }
