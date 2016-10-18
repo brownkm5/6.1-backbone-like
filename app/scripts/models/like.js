@@ -19,6 +19,9 @@ var Like = Backbone.Model.extend({
       likes = ' Likes';
     }
     $('.likes').html(this.get('likes') + likes);
+    
+    //makes the backbone toJSON still work when you change what toJSON does with the above code
+    return Backbone.Model.prototype.toJSON.apply(this, [options]);
   }
 });
 
